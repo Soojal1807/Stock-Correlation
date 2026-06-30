@@ -45,6 +45,7 @@ P ∈ ℝ^(T × N)
 
 Prices are not stationary (they trend and drift), so they are converted
 to returns before any analysis.
+(log returns specifically)
 
 ---
 
@@ -224,7 +225,7 @@ Daily standard deviation is scaled to annual by the square-root-of-time rule:
 σ_annual = σ_daily · √252
 ```
 
-252 is the number of trading days in a year.
+252 is the number of trading days in a year not 365 (We are accounting business days in a year).
 standard deviation scales with root of time hence 252 here.
 ---
 
